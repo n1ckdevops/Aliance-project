@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.main-container {
+  min-height: 100vh;
+}
+
 @font-face {
   font-family: "Bebas Neue Regular";
   src: url("../fonts/BebasNeueRegular.woff") format("woff");
@@ -114,7 +118,7 @@ body {
 }
 
 .header-content {
-  padding-top: 150px;
+  padding-top: 78px;
   position: relative;
   z-index: 1;
   color: #fff;
@@ -153,6 +157,7 @@ body {
 .header-features-item {
   padding: 30px 50px;
   border: 1px solid rgba(235, 235, 240, 0.20);
+  border-bottom: none;
 }
 
 .header-features-item:not(:last-child) {

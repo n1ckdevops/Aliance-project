@@ -50,6 +50,10 @@ body {
   height: 100%;
 }
 
+.navbar-light .logo-link-path {
+  fill: #292D33;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -61,6 +65,12 @@ body {
   top: 0;
   z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: 0.2s;
+}
+
+.navbar-light {
+  background-color: #fff;
+  color: #292d33;
 }
 
 .header-nav {
@@ -120,6 +130,7 @@ body {
 .separator {
   width: 150px;
   height: 2px;
+  margin-bottom: 30px;
   background: #5c8ee5;
 }
 

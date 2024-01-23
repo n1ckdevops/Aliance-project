@@ -24,6 +24,7 @@ body {
 
 .header {
   min-height: 100vh;
+  padding-top: 94px;
 }
 
 .header-img {
@@ -39,6 +40,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
   background: rgba(41, 45, 51, 0.6);
   z-index: 0;
 }
@@ -51,9 +53,13 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  width: 100%;
   height: 94px;
   color: #fff;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -111,7 +117,7 @@ body {
   height: 100%;
 }
 
-.separater {
+.separator {
   width: 150px;
   height: 2px;
   background: #5c8ee5;
@@ -131,7 +137,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -156,7 +162,7 @@ body {
 
 .header-features-item {
   padding: 30px 50px;
-  border: 1px solid rgba(235, 235, 240, 0.20);
+  border: 1px solid rgba(235, 235, 240, 0.2);
   border-bottom: none;
 }
 
@@ -168,4 +174,90 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.section-title {
+  color: #292d33;
+  font-family: "Bebas Neue Regular", "Helvetica Neue";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 72px */
+}
+
+.steps {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.steps-item {
+  max-width: 330px;
+}
+
+.steps-num {
+  color: #5c8ee5;
+  font-family: "Bebas Neue Regular";
+  font-size: 48px;
+  font-style: normal;
+  line-height: 120%; /* 57.6px */
+  margin-bottom: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-num::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ebebf0;
+  margin-left: 30px;
+}
+
+.steps-title {
+  color: #292d33;
+  font-family: "Noto Sans";
+  font-size: 28px;
+  font-style: normal;
+  line-height: 160%; /* 44.8px */
+  margin-bottom: 10px;
+}
+
+.steps-text {
+  color: var(--txt2, #828a99);
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.steps-link {
+  display: flex;
+  align-items: center;
+  color: #5c8ee5;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+  text-decoration: none;
+}
+
+.steps-link::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #5c8ee5;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }

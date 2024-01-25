@@ -45,13 +45,15 @@ body {
   z-index: 0;
 }
 .logo-link {
-  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
 }
 
 .navbar-light .logo-link-path {
-  fill: #292D33;
+  fill: #292d33;
 }
 
 .navbar {
@@ -71,6 +73,7 @@ body {
 .navbar-light {
   background-color: #fff;
   color: #292d33;
+  height: 74px;
 }
 
 .header-nav {

@@ -31,7 +31,7 @@ body {
   background-image: url("../img/main_img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left;
   position: relative;
 }
 

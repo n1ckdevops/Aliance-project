@@ -1,5 +1,5 @@
 const navbar = document.querySelector('.navbar');
-const logo = document.querySelector('.logo-svg use');
+const logo = document.querySelector('.main-logo-svg use');
 
 window.addEventListener('scroll', () => { 
   if (this.scrollY > 1) {

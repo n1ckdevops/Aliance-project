@@ -14,7 +14,66 @@
     <title>Aliance Production</title>
   </head>
   <body>
+    <div class="mobile-menu">
+      <ul class="mobile-nav">
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">О компании</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Контрактное производство</a>
+          <ul class="mobile-submenu">
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Бытовая химия</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#"
+                >Дезинфицирующие средства</a
+              >
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#"
+                >Косметическая продукция</a
+              >
+            </li>
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Собственные марки</a>
+          <ul class="mobile-submenu">
+            <li class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+            </li>
+            <li class="mobile-submenu-link" class="mobile-submenu-item">
+              <a class="mobile-submenu-link" href="#">Автохимия AP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Новости</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.mobile-menu -->
     <nav class="navbar">
+      <a href="" class="mobile-menu-toggle">
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+        <div class="mobile-menu-line"></div>
+      </a>
+      <!-- /.mobile-menu-toggle -->
+
       <a href="./" class="logo-link">
         <svg class="main-logo-svg">
           <use href="img/sprites.svg#logo-white"></use>
@@ -46,7 +105,12 @@
         </a>
       </div>
       <!-- /.header-phone -->
-      <button class="button header-button ">Получить консультацию</button>
+      <button class="button header-button">
+        <svg class="button-phone" width="24" height="24">
+          <use href="img/sprites.svg#phone"></use>
+        </svg>
+        <span class="button-text">Получить консультацию</span>
+      </button>
     </nav>
     <!-- /.navbar -->
     <header class="header header-img">

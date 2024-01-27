@@ -341,8 +341,52 @@ section {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1324px) {
   html {
     font-size: 11px;
+  }
+
+  .header-phone {
+
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 79rem;
+  }
+
+  .header-nav {
+    padding-left: 2rem; 
+  }
+
+  .logo-link {
+    padding: 2rem; 
+  }
+
+  .header-nav-item:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+ .header-button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+ }
+  
+ .header-phone {
+  margin-right: 2rem;
+ }
+
+
+}
+
+@media (max-width: 1075px) {
+  .container {
+    max-width: 70rem;
+  }
+
+  .header-phone {
+    display: none;
   }
 }

@@ -15,10 +15,6 @@ html {
   font-size: 16px;
 }
 
-.main-container {
-  min-height: 100vh;
-}
-
 @font-face {
   font-family: "Bebas Neue Regular";
   src: url("../fonts/BebasNeueRegular.woff") format("woff");
@@ -37,7 +33,7 @@ body {
 
 .header {
   min-height: 100vh;
-  padding-top: 5.875rem;
+  padding-top: 4rem;
 }
 
 .header-img {
@@ -132,7 +128,6 @@ body {
 .header-nav-item:not(:last-child) {
   margin-right: 3.3125rem;
 }
-
 
 .header-phone {
   flex-shrink: 0;
@@ -246,8 +241,8 @@ body {
 }
 
 .section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
 }
 
 .section-title {
@@ -351,6 +346,10 @@ body {
   .header-phone {
     margin-right: 2.5rem;
   }
+  .section {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -363,6 +362,11 @@ body {
 
   .header-nav-item:not(:last-child) {
     margin-right: 2.3125rem;
+  }
+
+  .section {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
   }
 }
 
@@ -413,15 +417,12 @@ body {
     height: 100%;
     padding-top: 15px;
     padding-left: 13px;
-    padding-right: 22px;
-    padding-bottom: 14px;
+    padding-right: 10px;
+    padding-bottom: 28px;
   }
   .header-content {
     padding-top: 6rem;
   }
-  /* .header {
-    min-height: auto;
-  } */
 }
 
 @media (max-width: 992px) {
@@ -431,11 +432,12 @@ body {
   }
 
   .header {
-    min-height: auto
+    /* min-height: auto; */
+    padding-top: 5rem;
   }
   .header-content {
-  padding-top: 4rem;
-}
+    padding-top: 4rem;
+  }
   .header-nav {
     display: none;
   }
@@ -604,6 +606,10 @@ body {
   .header-features {
     align-items: start;
   }
+  .section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -611,16 +617,24 @@ body {
     max-width: 55rem;
   }
 
-  .close-menu .mobile-menu-line:nth-child(2){
-    display: none;
+  .header-features {
+    margin-top: 4rem;
   }
-  .close-menu .mobile-menu-line:nth-child(1){
-    transform: rotate(45deg) translateX(8px) translateY(7px);
+  .header-features-item {
+    height: 127px;
+  }
 
-  }
-  .close-menu .mobile-menu-line:nth-child(3){
-    transform: rotate(-45deg) translateX(8px) translateY(-7px);
-    
+  .section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
-
+.close-menu .mobile-menu-line:nth-child(2) {
+  display: none;
+}
+.close-menu .mobile-menu-line:nth-child(1) {
+  transform: rotate(45deg) translateX(8px) translateY(7px);
+}
+.close-menu .mobile-menu-line:nth-child(3) {
+  transform: rotate(-45deg) translateX(8px) translateY(-7px);
+}

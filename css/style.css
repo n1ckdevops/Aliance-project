@@ -493,6 +493,7 @@ body {
     height: 1px;
     background-color: #fff;
     width: 100%;
+    transition: 0.2s;
   }
 
   .mobile-menu-line:nth-child(2) {
@@ -610,5 +611,16 @@ body {
     max-width: 55rem;
   }
 
+  .close-menu .mobile-menu-line:nth-child(2){
+    display: none;
+  }
+  .close-menu .mobile-menu-line:nth-child(1){
+    transform: rotate(45deg) translateX(8px) translateY(7px);
+
+  }
+  .close-menu .mobile-menu-line:nth-child(3){
+    transform: rotate(-45deg) translateX(8px) translateY(-7px);
+    
+  }
 }
 

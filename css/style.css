@@ -397,11 +397,20 @@ section {
     font-size: 12px;
   }
   .container {
-    max-width: 70rem;
+    max-width: 75rem;
   }
 
   .header-phone {
     display: none;
+  }
+
+  .header-features-item {
+    width: 14rem;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 13px;
+    padding-right: 22px;
+    padding-bottom: 14px;
   }
 }
 

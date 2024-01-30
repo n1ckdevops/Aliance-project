@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .mobile-menu {
@@ -16,7 +20,7 @@ html {
 }
 
 .main-container {
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 @font-face {
@@ -133,7 +137,6 @@ body {
   margin-right: 3.3125rem;
 }
 
-
 .header-phone {
   flex-shrink: 0;
   display: flex;
@@ -229,8 +232,8 @@ body {
 }
 
 .header-features-item {
-  width: 18rem;
-  padding: 1.875rem 3.125rem;
+  min-width: 288px;
+  padding: 30px 50px;
   border: 0.0625rem solid rgba(235, 235, 240, 0.2);
 }
 
@@ -248,6 +251,7 @@ body {
 section {
   margin-top: 9.375rem;
   margin-bottom: 9.375rem;
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -269,7 +273,7 @@ section {
 }
 
 .steps-item {
-  max-width: 20.625rem;
+  max-width: 330px;
 }
 
 .steps-num {
@@ -300,7 +304,7 @@ section {
   font-weight: 400;
   line-height: 160%; /* 2.8rem */
   margin-bottom: 0.625rem;
-  /* width: 18.75rem; */
+  max-width: 18.75rem;
   letter-spacing: 0.0187rem;
 }
 
@@ -342,6 +346,11 @@ section {
   html {
     font-size: 14px;
   }
+  .header-features-item {
+    min-width: 18rem;
+    padding: 1.875rem 3.125rem;
+    border: 0.0625rem solid rgba(235, 235, 240, 0.2);
+  }
 }
 
 @media (max-width: 1530px) {
@@ -350,6 +359,11 @@ section {
   }
   .header-phone {
     margin-right: 2.5rem;
+  }
+  .header-features-item {
+    min-width: 17.5rem;
+    padding: 1.5625rem 3.125rem;
+    border: 0.0625rem solid rgba(235, 235, 240, 0.2);
   }
 }
 
@@ -371,7 +385,7 @@ section {
     margin-right: 2rem;
   }
   .container {
-    /* max-width: 79rem; */
+    /* max-width: 80rem; */
   }
 
   .header-content {
@@ -390,6 +404,11 @@ section {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .header-features-item {
+    max-width: 100%;
+    padding: 1.875rem 3.125rem;
+  }
 }
 
 @media (max-width: 1245px) {
@@ -397,7 +416,7 @@ section {
     font-size: 12px;
   }
   .container {
-    /* max-width: 70rem; */
+    max-width: 1050px;
   }
 
   .header-phone {
@@ -407,12 +426,12 @@ section {
 
 @media (max-width: 1000px) {
   .container {
-    /* max-width: 80%; */
+    max-width: 80%;
   }
 
-
   .header-features-item {
-    padding: 0;
+    /* padding: 0;
+     */
   }
   .header-nav {
     display: none;
@@ -566,12 +585,5 @@ section {
     width: 24px;
     height: 24px;
     fill: #333;
-  }
-  .steps {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0;
   }
 }

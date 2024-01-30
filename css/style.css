@@ -383,7 +383,7 @@ body {
   }
 
   .header-nav-item:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 
   .header-button {
@@ -419,9 +419,9 @@ body {
   .header-content {
     padding-top: 6rem;
   }
-  .header {
+  /* .header {
     min-height: auto;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
@@ -598,7 +598,7 @@ body {
     font-size: 1.4rem;
   }
   .steps-item {
-    max-width: 16rem;
+    max-width: 14rem;
   }
   .header-features {
     align-items: start;

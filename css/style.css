@@ -64,6 +64,9 @@ body {
   width: 9rem;
   height: 2.75rem;
 }
+.logo {
+  display: none;
+}
 
 .logo-svg-phone {
   width: 1.5rem;

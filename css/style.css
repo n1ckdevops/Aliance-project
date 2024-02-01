@@ -502,6 +502,7 @@ body {
 
   .mobile-menu.is-open {
     display: block;
+    overflow: scroll;
   }
 
   .mobile-menu-toggle {

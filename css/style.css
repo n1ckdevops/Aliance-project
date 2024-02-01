@@ -32,7 +32,6 @@ body {
 }
 
 .header {
-  min-height: 100vh;
   padding-top: 4rem;
 }
 
@@ -226,6 +225,22 @@ body {
 .header-features-item {
   width: 18rem;
   padding: 1.875rem 3.125rem;
+  min-height: 100%;
+  border: 0.0625rem solid rgba(235, 235, 240, 0.2);
+}
+.slider-buttons {
+  display: none;
+  height: 44px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+  height: 100%;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   border: 0.0625rem solid rgba(235, 235, 240, 0.2);
 }
 
@@ -408,16 +423,27 @@ body {
     max-width: 90%;
   }
 
+  .swiper {
+    margin-bottom: 0;
+  }
+  .slider-buttons {
+    display: flex;
+    height: 44px;
+  }
   .header-phone {
     display: none;
   }
 
+  .header-features {
+    margin-top: 5rem;
+  }
+
   .header-features-item {
-    width: 15rem;
-    height: 100%;
-    padding-top: 15px;
-    padding-left: 13px;
-    padding-right: 10px;
+    width: 250px;
+    min-height: 126px;
+    padding-top: 27px;
+    padding-left: 29px;
+    padding-right: 72px;
     padding-bottom: 28px;
   }
   .header-content {
@@ -427,17 +453,18 @@ body {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 70rem;
+    max-width: 60rem;
     overflow: hidden;
   }
 
   .header {
-    /* min-height: auto; */
     padding-top: 5rem;
   }
+
   .header-content {
     padding-top: 4rem;
   }
+
   .header-nav {
     display: none;
   }
@@ -605,30 +632,64 @@ body {
   }
   .header-features {
     align-items: start;
+    margin-top: 5rem;
   }
   .section {
     margin-top: 6rem;
     margin-bottom: 6rem;
   }
+  .header-features-item {
+    padding-top: 22px;
+    padding-left: 22px;
+    padding-right: 86px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 55rem;
+    max-width: 45rem;
   }
 
   .header-features {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   .header-features-item {
-    height: 127px;
+    height: 100%;
   }
-
+  .header-title {
+    font-size: 4rem;
+  }
   .section {
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
 }
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+  .header-features {
+    margin-top: 3rem;
+  }
+  .header-features-item {
+    height: 127px;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+  .section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main-button {
+    width: 100%;
+  }
+}
+
 .close-menu .mobile-menu-line:nth-child(2) {
   display: none;
 }

@@ -36,3 +36,36 @@ menuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
+
+const swiper = new Swiper(".swiper", {
+  speed: 500,
+  // autoHeight: true,
+  slidesPerView: 4,
+  navigation: {
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    300: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 768
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 1200
+    1200: {
+      slidesPerView: 5,
+    }
+  }
+  
+
+});

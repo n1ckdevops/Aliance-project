@@ -41,31 +41,26 @@ menuToggle.addEventListener("click", (event) => {
 });
 const swiperSteps = new Swiper(".steps-slider", {
   speed: 500,
-  slidesPerView: 4,
+  slidesPerView: 1,
+  loop: true,
   navigation: {
     nextEl: ".steps-button-next",
     prevEl: ".steps-button-prev",
   },
   breakpoints: {
     // when window width is >= 320px
-    // 300: {
-    //   slidesPerView: 1,
-    // },
-    // when window width is >= 768
-    // 576: {
-    //   slidesPerView: 2,
-    // },
-    // 768: {
-    //   slidesPerView: 3,
-    // },
-    // when window width is >= 1024px
-    // 1024: {
-    //   slidesPerView: 3,
-    // },
-    // when window width is >= 1200
-    // 1200: {
-    //   slidesPerView: 5,
-    // },
+    300: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });
 const swiper = new Swiper(".swiper", {

@@ -272,6 +272,7 @@ body {
 
 .steps {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -279,7 +280,7 @@ body {
 }
 
 .steps-item {
-  max-width: 20.625rem;
+  max-width: 100%;
 }
 
 .steps-num {
@@ -351,7 +352,6 @@ body {
   display: none;
   height: 40px;
   justify-content: end;
-
 }
 
 .steps-button-prev,
@@ -363,7 +363,6 @@ body {
   justify-content: center;
   display: flex;
   cursor: pointer;
-
 }
 @media (max-width: 1740px) {
   html {
@@ -442,6 +441,7 @@ body {
   }
   .slider-buttons {
     display: flex;
+
     height: 44px;
   }
   .header-phone {
@@ -461,6 +461,10 @@ body {
   }
   .steps-buttons {
     display: flex;
+  }
+  .steps {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

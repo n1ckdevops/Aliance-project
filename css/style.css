@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .mobile-menu {
@@ -247,9 +247,6 @@ body {
   border: 0.0625rem solid rgba(235, 235, 240, 0.2);
 }
 
-.header-features-item:not(:last-child) {
-  border-right: none;
-}
 .header-features-text {
   font-size: 1rem;
   font-style: normal;

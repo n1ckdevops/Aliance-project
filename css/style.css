@@ -64,6 +64,9 @@ body {
   width: 9rem;
   height: 2.75rem;
 }
+.logo {
+  display: none;
+}
 
 .logo-svg-phone {
   width: 1.5rem;
@@ -213,8 +216,8 @@ body {
 .header-features {
   position: relative;
   display: flex;
-  align-items: center;
-  min-height: 10.5rem;
+  align-items: stretch;
+  /* min-height: 10.5rem; */
   margin-top: 6.25rem;
   margin-bottom: 0;
   padding-left: 0;
@@ -225,7 +228,7 @@ body {
 .header-features-item {
   width: 18rem;
   padding: 1.875rem 3.125rem;
-  min-height: 100%;
+  height: auto !important;
   border: 0.0625rem solid rgba(235, 235, 240, 0.2);
 }
 .slider-buttons {
@@ -442,6 +445,9 @@ body {
     width: 250px;
     min-height: 100%;
     
+  }
+  .header-features-item {
+    border: 0.0625rem solid rgba(235, 235, 240, 0.2);
   }
   .header-content {
     padding-top: 6rem;

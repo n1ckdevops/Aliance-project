@@ -440,11 +440,8 @@ body {
 
   .header-features-item {
     width: 250px;
-    min-height: 126px;
-    padding-top: 27px;
-    padding-left: 29px;
-    padding-right: 72px;
-    padding-bottom: 28px;
+    min-height: 100%;
+    
   }
   .header-content {
     padding-top: 6rem;

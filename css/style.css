@@ -272,7 +272,6 @@ body {
 
 .steps {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -280,7 +279,9 @@ body {
 }
 
 .steps-item {
-  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
 }
 
 .steps-num {
@@ -441,7 +442,6 @@ body {
   }
   .slider-buttons {
     display: flex;
-
     height: 44px;
   }
   .header-phone {
@@ -646,7 +646,7 @@ body {
     font-size: 1.4rem;
   }
   .steps-item {
-    max-width: 14rem;
+    /* max-width: 14rem; */
   }
   .header-features {
     align-items: start;

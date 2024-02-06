@@ -198,7 +198,7 @@ body {
 }
 
 .header-content {
-  padding-top: 8.875rem;
+  padding-top: 10.775rem;
   position: relative;
   z-index: 1;
   color: #fff;
@@ -269,7 +269,7 @@ body {
 }
 
 .section {
-  margin-top: 9rem;
+  margin-top: 9.1rem;
   margin-bottom: 9rem;
 }
 
@@ -281,6 +281,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 4.5rem */
+  margin-bottom: 58px;
 }
 
 .steps {
@@ -428,6 +429,57 @@ body {
   right: 0;
   z-index: 0;
 }
+.section.trademark {
+  margin-top: 9rem;
+}
+.trademark-cards {
+  display: flex;
+}
+.trademark-card {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid #ebebf0;
+  transition: 0.2s;
+  display: grid;
+  padding: 2.925rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 2fr;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
+  height: 280px;
+}
+.trademark-card-img {
+  grid-area: logo;
+  fill: #828a99;
+  width: 100%;
+}
+.trademark-card-title {
+  grid-area: title;
+  margin: 0;
+  margin-top: 1.0625rem;
+  color: rgb(41, 45, 51);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.trademark-card-text {
+  grid-area: text;
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.trademark-card:hover {
+  border-color: #5c8ee6;
+  cursor: pointer;
+}
+.trademark-card:hover .trademark-card-img {
+  fill: #5c8ee6;
+}
+.trademark-card:hover .trademark-card-title {
+  color: #5c8ee6;
+}
 
 @media (max-width: 1740px) {
   html {
@@ -536,9 +588,35 @@ body {
   .card {
     flex-basis: 50%;
   }
+  .trademark-card {
+    flex-basis: 50%;
+    border: 1px solid #ebebf0;
+    transition: 0.2s;
+    display: grid;
+    padding: 3.125rem;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto 2fr;
+  }
 }
 
 @media (max-width: 992px) {
+  .hidden {
+    display: none;
+  }
+  .trademark-cards {
+    flex-direction: column;
+  }
+  .trademark-card-text {
+    font-size: 14px;
+  }
+  .section.trademark {
+    margin-top: 4rem;
+  }
+  .trademark-card-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+  }
   .separator {
     width: 8.575rem;
     height: 0.14rem;
@@ -851,6 +929,14 @@ body {
   }
   .button {
     font-size: 1.2rem;
+  }
+  .trademark-card {
+    grid-template-areas:
+      "logo title"
+      "text text";
+  }
+  .trademark-card-title {
+    margin: auto;
   }
 }
 

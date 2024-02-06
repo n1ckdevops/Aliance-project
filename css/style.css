@@ -497,6 +497,9 @@ body {
   html {
     font-size: 12px;
   }
+  .card-text {
+    font-size: 14px;
+  }
   .container {
     max-width: 90%;
   }
@@ -536,6 +539,21 @@ body {
 }
 
 @media (max-width: 992px) {
+  .separator {
+    width: 8.575rem;
+    height: 0.14rem;
+  }
+  .steps-num {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  .steps-num::after {
+    content: "";
+    height: 0.0625rem;
+    background: #ebebf0;
+    margin-left: 2.25rem;
+    margin-right: 45px;
+  }
   .container {
     max-width: 60rem;
     overflow: hidden;
@@ -713,12 +731,24 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 0;
+    margin-bottom: 18px;
   }
   .steps-title {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    margin-top: 0.625rem;
   }
-  .steps-item {
-    /* max-width: 14rem; */
+  .steps-text {
+    font-size: 14px;
+    margin-bottom: 2.05rem;
+  }
+  .steps-link::before {
+    width: 3.5rem;
+    margin-right: 1.75rem;
+  }
+  .steps-link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
   }
   .header-features {
     margin-top: 5rem;
@@ -740,13 +770,29 @@ body {
     font-weight: 400;
     line-height: 160%;
   }
+  .section-title {
+    font-size: 3.05rem;
+  }
+  .card-content {
+    padding: 1.7rem 2.425rem;
+  }
+  .card-text {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 23.725rem;
+  }
+  .card-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 47rem;
   }
-
+  .card-img {
+    width: 85%;
+  }
   .header-features {
     margin-top: 3rem;
   }
@@ -754,7 +800,6 @@ body {
     height: 100%;
   }
   .header-features-text {
-
   }
   .header-title {
     font-size: 4rem;
@@ -772,6 +817,9 @@ body {
   .container {
     max-width: 93%;
   }
+  .card-img {
+    width: 100%;
+  }
   .header-content {
     padding-top: 3rem;
   }
@@ -779,17 +827,15 @@ body {
     margin-top: 1.5rem;
   }
   .header-features-item {
-    /* height: 127px; */
-    /* min-width: 100%;
-    padding-bottom: 43px; */
+    padding-bottom: 46px;
   }
   .header-title {
     font-size: 4rem;
     margin-bottom: 1.4rem;
   }
   .section {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .main-button {
     width: 100%;
@@ -814,7 +860,7 @@ body {
 .close-menu .mobile-menu-line:nth-child(1) {
   transform: rotate(45deg) translateX(3px) translateY(2px);
 }
-  
+
 .close-menu .mobile-menu-line:nth-child(3) {
   transform: rotate(-45deg) translateX(8px) translateY(-7px);
 }

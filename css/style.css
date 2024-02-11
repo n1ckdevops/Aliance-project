@@ -481,12 +481,13 @@ body {
   color: #5c8ee6;
 }
 .founder {
+  min-height: 41.25rem;
   position: relative;
 }
 
 .founder-content {
-  max-width: 45rem;
-  margin-top: 4.375rem;
+  max-width: 43rem;
+  margin-top: 2.875rem;
 }
 
 .founder-content-wrapper {
@@ -496,21 +497,76 @@ body {
 
 .founder-title {
   position: relative;
+  max-width: 30rem;
+  margin-bottom: 1.6875rem;
 }
 .founder-photo {
   position: absolute;
-  width: 40%;
-  left: 0;
-  top: 0;
-  min-height: 41.25rem;
+  width: 44.7%;
+  left: 0px;
+  top: 5px;
+  right: 0;
+  height: 100%;
   object-fit: cover;
 }
 
 .founder-text {
-  font-size: 1rem;
+  color: rgb(130, 138, 153);
+  font-size: 16px;
   font-weight: 400;
   line-height: 160%;
-  color: rgb(130, 138, 153);
+  letter-spacing: 0%;
+  margin-bottom: 3.4375rem;
+}
+
+.section-title-clients {
+  margin-bottom: 2.8125rem;
+}
+.clients-wrapper {
+  display: flex;
+  gap: 2.225rem;
+}
+
+.clients-list {
+  list-style-type: none;
+  padding: 0;
+  columns: 2 auto;
+}
+
+.clients-content {
+  flex-basis: 50%;
+  margin-left: 1.05rem;
+  margin-top: -1.3125rem;
+}
+
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: rgb(41, 45, 51);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  padding-bottom: 1.25rem;
+}
+
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 25;
+}
+
+.client-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.clients {
+  margin-top: 9.625rem;
 }
 
 @media (max-width: 1740px) {
@@ -575,8 +631,6 @@ body {
   .header-phone {
     margin-right: 1rem;
   }
-
-  
 }
 
 @media (max-width: 1200px) {
@@ -632,12 +686,15 @@ body {
     grid-template-rows: auto 2fr;
   }
   .founder-content {
-    max-width: 43rem;
+    max-width: 40rem;
     margin-top: 1.875rem;
   }
   .founder-text {
     font-size: 14px;
     font-weight: 400;
+  }
+  .clients-content {
+    flex-basis: 60%;
   }
 }
 
@@ -912,11 +969,14 @@ body {
 
   .founder-content {
     max-width: 60rem;
-    margin-top: 0;
+    margin-top: .5625rem;
   }
 
   .founder-title {
-    margin-bottom: 1.875rem;
+    margin-bottom: 0;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
 }
 
@@ -944,6 +1004,9 @@ body {
   }
   .card {
     flex-basis: 100%;
+  }
+  .clients {
+    margin-top: 10px;
   }
 }
 
@@ -993,6 +1056,21 @@ body {
   }
   .trademark-card-title {
     margin: auto;
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .client-logo-item {
+    flex-basis: 50%;
+  }
+  .clients {
+    margin-top: 5.75rem;
+  }
+  .clients-wrapper {
+    gap: 0;
+  }
+  .clients-list-item {
+    gap: 1.85rem;
   }
 }
 

@@ -62,7 +62,7 @@ const swiperSteps = new Swiper(".steps-slider", {
     },
   },
 });
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".features-slider", {
   speed: 500,
   slidesPerView: 4,
   navigation: {

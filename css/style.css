@@ -575,6 +575,8 @@ body {
   .header-phone {
     margin-right: 1rem;
   }
+
+  
 }
 
 @media (max-width: 1200px) {
@@ -630,9 +632,13 @@ body {
     grid-template-rows: auto 2fr;
   }
   .founder-content {
-    max-width: 35rem;
+    max-width: 43rem;
+    margin-top: 1.875rem;
   }
-
+  .founder-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 992px) {
@@ -898,6 +904,20 @@ body {
   .card-img {
     width: 100%;
   }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+
+  .founder-content {
+    max-width: 60rem;
+    margin-top: 0;
+  }
+
+  .founder-title {
+    margin-bottom: 1.875rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -924,11 +944,6 @@ body {
   }
   .card {
     flex-basis: 100%;
-  }
-  .founder-photo {
-    position: relative;
-    width: 100%;
-    margin-bottom: 3.125rem;
   }
 }
 

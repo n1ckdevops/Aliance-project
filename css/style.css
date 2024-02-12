@@ -581,6 +581,7 @@ body {
 
 .clients {
   margin-top: 9.625rem;
+  margin-bottom: 9rem;
 }
 
 .section-title-trademark {
@@ -590,10 +591,12 @@ body {
 .clients-img {
   filter: grayscale();
   transition: 0.2s;
+  
 }
 
 .clients-img:hover {
   filter: grayscale(0%);
+  cursor: pointer;
 }
 
 @media (max-width: 1740px) {

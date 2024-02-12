@@ -587,6 +587,15 @@ body {
   margin-bottom: 3.8rem;
 }
 
+.clients-img {
+  filter: grayscale();
+  transition: 0.2s;
+}
+
+.clients-img:hover {
+  filter: grayscale(0%);
+}
+
 @media (max-width: 1740px) {
   html {
     font-size: 14px;

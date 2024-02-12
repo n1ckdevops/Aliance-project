@@ -270,8 +270,10 @@ body {
 
 .section {
   margin-top: 9.1rem;
-  margin-bottom: 9rem;
+  margin-bottom: 0;
 }
+
+
 
 .section-title {
   margin-top: 1.5rem;
@@ -281,9 +283,21 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 4.5rem */
-  margin-bottom: 58px;
+  margin-bottom: 5rem;
 }
 
+.section-title-ptoduction {
+  margin-bottom: 3.625rem;
+}
+
+
+.section-title-header {
+  margin-bottom: 3.4375rem;
+}
+
+.production {
+  margin-top: 10.8125rem;
+}
 .steps {
   display: flex;
   list-style: none;
@@ -420,10 +434,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
-  margin-bottom: 24.625rem;
+  margin-bottom: 22.125rem;
 }
 .card-img {
-  width: 90%;
+  width: 95%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -486,7 +500,7 @@ body {
 }
 
 .founder-content {
-  max-width: 43rem;
+  max-width: 44rem;
   margin-top: 2.875rem;
 }
 
@@ -502,7 +516,7 @@ body {
 }
 .founder-photo {
   position: absolute;
-  width: 44.7%;
+  width: 44%;
   left: 0px;
   top: 5px;
   right: 0;
@@ -535,7 +549,7 @@ body {
 
 .clients-content {
   flex-basis: 50%;
-  margin-left: 1.05rem;
+  margin-left: 0;
   margin-top: -1.3125rem;
 }
 
@@ -567,6 +581,10 @@ body {
 
 .clients {
   margin-top: 9.625rem;
+}
+
+.section-title-trademark {
+  margin-bottom: 3.8rem;
 }
 
 @media (max-width: 1740px) {

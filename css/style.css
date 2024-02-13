@@ -1170,6 +1170,9 @@ body {
   .blog-title {
     margin-bottom: 30px;
   }
+  .section-title-header {
+    margin-bottom: 30px;
+}
 }
 
 .close-menu .mobile-menu-line:nth-child(2) {

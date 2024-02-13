@@ -95,8 +95,19 @@ const swiper = new Swiper(".features-slider", {
 const swiperBlog = new Swiper(".blog-slider", {
   speed: 500,
   slidesPerView: 2,
+  spaceBetween: 28,
   navigation: {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    300: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 1024px
+    992: {
+      slidesPerView: 2,
+    },
   },
 });

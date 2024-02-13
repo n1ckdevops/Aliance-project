@@ -384,12 +384,16 @@ body {
 }
 .steps-buttons {
   display: none;
+}
+
+.primary-buttons-wrapper {
+  display: flex;
   height: 40px;
   justify-content: end;
 }
 
-.steps-button-prev,
-.steps-button-next {
+.primary-button-prev,
+.primary-button-next {
   background: #5c8ee6;
   height: 100%;
   width: 60px;

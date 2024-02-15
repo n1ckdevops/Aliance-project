@@ -665,7 +665,6 @@ body {
   padding-top: 6.25rem;
   margin-top: 9.375rem;
   padding-bottom: 6.25rem;
-  
 }
 .cta-image {
   position: absolute;
@@ -722,7 +721,7 @@ body {
 .input-group-label {
   position: absolute;
   cursor: text;
-  top: 1.3rem;
+  top: 1.5rem;
   left: 1.975rem;
   color: rgb(130, 138, 153);
   font-size: 16px;
@@ -763,10 +762,10 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 }
 
 .notify-text {
-  max-width: 23.75rem;
+  /* max-width: 23.75rem; */
   margin-top: 0;
   color: rgb(130, 138, 153);
-  font-size: .75rem;
+  font-size: 12px;
   font-weight: 400;
   line-height: 160%;
 }
@@ -828,6 +827,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .header-button {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 1rem;
   }
 
   .header-phone {
@@ -909,9 +909,24 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .blog-card-text {
     font-size: 1.3rem;
   }
+
+  /* cta section */
+  .cta-image {
+    bottom: 0;
+    left: -3rem;
+    max-width: 38rem;
+  }
+  .section-cta {
+    padding-top: 2rem;
+    padding-bottom: 3.25rem;
+  }
 }
 
 @media (max-width: 992px) {
+  .hidden-992 {
+    display: none;
+  }
+
   .trademark-cards {
     flex-direction: column;
   }
@@ -1188,6 +1203,14 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .clients-wrapper {
     flex-direction: column;
   }
+
+  /* cta section 992*/
+  .cta-form-wrapper {
+    justify-content: center;
+  }
+  .cta-form-text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1220,6 +1243,17 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   }
   .clients {
     margin-top: 10px;
+  }
+  /* cta section */
+  .input-group-wrapper {
+    flex-direction: column;
+  }
+  .cta-form-footer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .cta-form-button {
+    width: 100%;
   }
 }
 
@@ -1291,6 +1325,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .section-title-header {
     margin-bottom: 30px;
   }
+  
 }
 
 .close-menu .mobile-menu-line:nth-child(2) {

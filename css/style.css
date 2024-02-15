@@ -654,16 +654,22 @@ body {
   margin-top: 30px;
 }
 
-/* cta block */
+/* cta section full */
 
 .bg-gray {
   background: #f0f2f5;
 }
 
+.cta-form-button {
+  padding: 20px 53px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%;
+}
 .section-cta {
   position: relative;
-  padding-top: 6.25rem;
-  margin-top: 9.375rem;
+  padding-top: 4.35rem;
+  margin-top: 14.075rem;
   padding-bottom: 6.25rem;
 }
 .cta-image {
@@ -676,6 +682,7 @@ body {
 .cta-form-wrapper {
   display: flex;
   justify-content: flex-end;
+  margin-left: 257px;
 }
 
 .cta-form {
@@ -684,11 +691,11 @@ body {
 
 .cta-form-text {
   color: rgb(130, 138, 153);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   line-height: 160%;
-  margin-top: 1.25rem;
-  margin-bottom: 2.625rem;
+  margin-top: 1.65rem;
+  margin-bottom: 3.125rem;
   max-width: 40rem;
 }
 
@@ -721,7 +728,7 @@ body {
 .input-group-label {
   position: absolute;
   cursor: text;
-  top: 1.5rem;
+  top: 21px;
   left: 1.975rem;
   color: rgb(130, 138, 153);
   font-size: 16px;
@@ -747,7 +754,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .cta-form-footer {
   display: flex;
   margin-top: 1.875rem;
-  align-items: center;
+  align-items: end;
   gap: 1.875rem;
 }
 
@@ -789,7 +796,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1480px) {
   .header-nav {
     padding-left: 2rem;
   }
@@ -804,6 +811,19 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .section {
     margin-top: 7rem;
     margin-bottom: 7rem;
+  }
+  /* cta section 1480 */
+  .cta-form-wrapper {
+    margin-left: auto;
+  }
+  .cta-image {
+    position: absolute;
+    bottom: 0px;
+    left: -40px;
+    max-width: 38rem;
+  }
+  .section-cta {
+    padding-bottom: 4.35rem;
   }
 }
 
@@ -913,12 +933,21 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   /* cta section */
   .cta-image {
     bottom: 0;
-    left: -3rem;
-    max-width: 38rem;
-  }
+    left: -30px;
+    max-width: 39%;
+}
   .section-cta {
     padding-top: 2rem;
     padding-bottom: 3.25rem;
+  }
+  .cta-form-text {
+    font-size: 14px;
+  }
+  .cta-form {
+    max-width: 47.8rem;
+  }
+  .cta-form-footer {
+    align-items: self-start;
   }
 }
 
@@ -1325,7 +1354,6 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .section-title-header {
     margin-bottom: 30px;
   }
-  
 }
 
 .close-menu .mobile-menu-line:nth-child(2) {

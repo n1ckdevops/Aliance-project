@@ -664,6 +664,8 @@ body {
   position: relative;
   padding-top: 6.25rem;
   margin-top: 9.375rem;
+  padding-bottom: 6.25rem;
+  
 }
 .cta-image {
   position: absolute;
@@ -679,6 +681,94 @@ body {
 
 .cta-form {
   max-width: 52.5rem;
+}
+
+.cta-form-text {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 1.25rem;
+  margin-bottom: 2.625rem;
+  max-width: 40rem;
+}
+
+.cta-form-title {
+  margin-bottom: 0;
+}
+
+.input-group-wrapper {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.input-group {
+  position: relative;
+  height: 66px;
+  flex-grow: 1;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1.25rem 1.875rem;
+  border: 1px solid #e4e4eb;
+  background-color: transparent;
+}
+
+.input-group-label {
+  position: absolute;
+  cursor: text;
+  top: 1.3rem;
+  left: 1.975rem;
+  color: rgb(130, 138, 153);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1.2px solid #5c8ee6;
+  outline: none;
+}
+
+.input:focus ~ .input-group-label,
+input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 10px;
+  background: #f0f2f5;
+  padding: 0 10px;
+}
+
+.cta-form-footer {
+  display: flex;
+  margin-top: 1.875rem;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.notify {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.notify-icon {
+  flex-shrink: 0;
+}
+
+.notify-text {
+  max-width: 23.75rem;
+  margin-top: 0;
+  color: rgb(130, 138, 153);
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 160%;
 }
 
 @media (max-width: 1740px) {

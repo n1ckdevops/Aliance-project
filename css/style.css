@@ -653,6 +653,34 @@ body {
   justify-content: space-between;
   margin-top: 30px;
 }
+
+/* cta block */
+
+.bg-gray {
+  background: #f0f2f5;
+}
+
+.section-cta {
+  position: relative;
+  padding-top: 6.25rem;
+  margin-top: 9.375rem;
+}
+.cta-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 45rem;
+}
+
+.cta-form-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-form {
+  max-width: 52.5rem;
+}
+
 @media (max-width: 1740px) {
   html {
     font-size: 14px;
@@ -1172,7 +1200,7 @@ body {
   }
   .section-title-header {
     margin-bottom: 30px;
-}
+  }
 }
 
 .close-menu .mobile-menu-line:nth-child(2) {

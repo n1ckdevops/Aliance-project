@@ -25,6 +25,9 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
 }
+.shown-576 {
+  display: none;
+}
 
 .container {
   max-width: 88.9375rem;
@@ -796,17 +799,17 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   text-decoration: none;
   font-style: normal;
   color: rgb(41, 45, 51);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
-  margin-left: 42px;
-  gap: 9px;
+  margin-left: 2.625rem;
+  gap: 0.5625rem;
 }
 
 .footer-info-address {
   font-style: inherit;
   color: rgb(41, 45, 51);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -815,22 +818,22 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 9px;
-  margin-right: 3px;
+  gap: 0.5625rem;
+  margin-right: 0.1875rem;
 }
 
 .footer-info-email {
   text-decoration: inherit;
   color: #000;
   color: rgb(41, 45, 51);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
 }
 
 .footer-phone {
   color: rgb(41, 45, 51);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 160%;
   margin-left: 112px;
@@ -850,7 +853,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 
 .footer-menu-title {
   color: rgb(41, 45, 51);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 160%;
   margin-bottom: 30px;
@@ -868,7 +871,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .footer-menu-link {
   text-decoration: none;
   color: rgb(130, 138, 153);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
   margin-bottom: 0.9375rem;
@@ -882,7 +885,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 
 .footer-menu-link-bold {
   color: rgb(41, 45, 51);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 160%;
   margin-bottom: 1.875rem;
@@ -893,7 +896,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 }
 
 .footer-icons {
-  gap: 20px;
+  gap: 1.25rem;
   display: flex;
 }
 
@@ -1105,6 +1108,57 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   }
   .cta-form-footer {
     align-items: self-start;
+  }
+  /* footer section 1200 */
+  .footer-top {
+    font-size: 14px;
+  }
+  .footer-info {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    color: rgb(41, 45, 51);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-left: 0;
+    gap: 0.5625rem;
+  }
+  .footer-mail {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5625rem;
+    margin-right: 0;
+  }
+
+  .footer-phone {
+    color: rgb(41, 45, 51);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 160%;
+    margin-left: 0;
+  }
+  .footer-logo {
+    width: 12.5rem;
+    height: 3.9287rem;
+  }
+  .footer-menu-list {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+  }
+  .footer-info-address {
+    font-size: 14px;
+  }
+  .footer-info-email {
+    font-size: 14px;
+  }
+  .footer-bottom * {
+    font-size: 14px;
   }
 }
 
@@ -1397,6 +1451,40 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .cta-form-text {
     font-size: 14px;
   }
+  /* footer section 992 */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-info-address,
+  .footer-info-email {
+    font-size: 14px;
+  }
+  .footer-menu-wrapper:last-child {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    justify-content: space-between;
+  }
+  .footer-bottom * {
+    font-size: 14px;
+  }
+  .footer-menu-column-2 {
+    columns: unset;
+    min-width: unset;
+  }
+  .footer-menu-title {
+    margin-bottom: 20px;
+  }
+  .footer-menu-list {
+    padding-left: 20px;
+  }
+  .footer-menu-link-bold {
+    margin-left: -20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1440,6 +1528,34 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   }
   .cta-form-button {
     width: 100%;
+  }
+  /* footer-section 768 */
+  .footer-legal {
+    color: rgb(130, 138, 153);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+    display: flex;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .copyright {
+    margin-bottom: 0;
+  }
+  .footer-menu-title {
+    font-weight: 700;
+  }
+  .footer-menu-link-bold {
+    font-weight: 700;
   }
 }
 
@@ -1510,6 +1626,44 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   }
   .section-title-header {
     margin-bottom: 30px;
+  }
+  /* footer section 576 */
+  .hidden-576 {
+    display: none;
+  }
+  .shown-576 {
+    display: block;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .footer-info-address,
+  .footer-info-email {
+    font-size: 14px;
+  }
+  .footer-menu-wrapper:last-child {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .footer-menu-column-2 {
+    columns: unset;
+    min-width: unset;
+  }
+  .footer-menu-title {
+    margin-bottom: 20px;
+  }
+  .footer-menu-list {
+    padding-left: 20px;
+  }
+  .footer-menu-link-bold {
+    margin-left: -20px;
+    margin-bottom: 20px;
   }
 }
 

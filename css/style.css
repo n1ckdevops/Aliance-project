@@ -843,8 +843,8 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 }
 
 .footer-bottom {
-  padding-top: 2.125rem;
-  padding-bottom: 2.125rem;
+  padding-top: 2.625rem;
+  padding-bottom: 1.725rem;
   display: flex;
 }
 
@@ -861,7 +861,6 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   list-style: none;
   text-decoration: none;
   margin: 0;
-
   padding: 0;
   padding-left: 20px;
 }
@@ -872,13 +871,13 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   display: block;
 }
 
 .footer-menu-column-2 {
   columns: 20rem auto;
-  min-width: 50rem;
+  min-width: 45.3rem;
 }
 
 .footer-menu-link-bold {
@@ -886,10 +885,11 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
+  margin-bottom: 1.875rem;
 }
 
 .footer-menu-wrapper:last-child {
-  margin-left: 5rem;
+  margin-left: 10.4rem;
 }
 
 .footer-icons {
@@ -902,11 +902,12 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   font-size: 12px;
   font-weight: 400;
   line-height: 160%;
-  padding: 20px 0;
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 70px;
+  padding: 0;
+  margin: 0;
+  gap: 5.175rem;
 }
 
 .policy {
@@ -927,6 +928,10 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-wrapper-down {
+  padding-bottom: 8px;
 }
 
 @media (max-width: 1740px) {

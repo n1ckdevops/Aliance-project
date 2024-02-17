@@ -162,6 +162,10 @@
 	</g>
 </symbol>
 
+<symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id='close'>
+	<path id="Vector" d="M3.86719 3.15991L3.16016 3.86694L11.292 11.9988L3.16016 20.1304L3.86719 20.8376L11.999 12.7058L20.1309 20.8376L20.8379 20.1304L12.7061 11.9988L20.8379 3.86694L20.1309 3.15991L11.999 11.2917L3.86719 3.15991Z" fill="#828A99" fill-opacity="1.000000" fill-rule="nonzero"/>
+</symbol>
+
 
 
 

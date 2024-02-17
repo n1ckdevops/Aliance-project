@@ -1763,7 +1763,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
     font-size: 14px;
   }
   .modal-close {
-    top: 38px;
+    top: 35px;
     right: 35px;
     width: 40px;
     height: 40px;

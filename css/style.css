@@ -67,9 +67,7 @@ body {
   width: 9rem;
   height: 2.75rem;
 }
-.logo {
-  display: none;
-}
+
 
 .logo-svg-phone {
   width: 1.5rem;
@@ -112,6 +110,18 @@ body {
 .navbar-light {
   background-color: #fff;
   color: #292d33;
+}
+
+.navbar-light .logo-white {
+  display: none;
+}
+.navbar-light .logo-dark {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+.navbar-scroll {
   height: 4.625rem;
 }
 

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <title>Aliance Production</title>
   </head>
-  <body>
+  <body class="front-page">
     <div class="mobile-menu">
       <ul class="mobile-nav">
         <li class="mobile-nav-item">
@@ -107,13 +107,13 @@
         <svg class="main-logo-svg logo-white">
           <use href="img/sprites.svg#logo-white"></use>
         </svg>
-        <svg class="main-logo-svg logo">
+        <svg class="main-logo-svg logo-dark">
           <use href="img/sprites.svg#logo"></use>
         </svg>
       </a>
       <ul class="header-nav">
         <li class="header-nav-item">
-          <a href="" class="header-nav-link">О компании</a>
+          <a href="about.html" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
           <a href="" class="header-nav-link">Контрактное производство</a>
@@ -137,7 +137,7 @@
         </a>
       </div>
       <!-- /.header-phone -->
-      <button class="button header-button" data-toggle=modal>
+      <button class="button header-button" data-toggle="modal">
         <svg class="button-phone" width="24" height="24">
           <use href="img/sprites.svg#phone"></use>
         </svg>
@@ -814,7 +814,7 @@
     <div class="modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle=modal>
+        <a href="#" class="modal-close" data-toggle="modal">
           <svg class="modal-svg" width="24" height="24">
             <use href="img/sprites.svg#close"></use>
           </svg>
@@ -827,13 +827,29 @@
         <form action="#" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
-              <input id="modal-user-name" type="text" class="input" placeholder=" " />
-              <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
+              <input
+                id="modal-user-name"
+                type="text"
+                class="input"
+                placeholder=" "
+              />
+              <label
+                class="input-group-label modal-input-label"
+                for="modal-user-name"
+                >Имя</label
+              >
             </div>
             <!-- /.input-group -->
             <div class="input-group modal-input-group">
-              <input id="modal-user-phone" type="tel" class="input" placeholder=" " />
-              <label class="input-group-label modal-input-label" for="modal-user-phone"
+              <input
+                id="modal-user-phone"
+                type="tel"
+                class="input"
+                placeholder=" "
+              />
+              <label
+                class="input-group-label modal-input-label"
+                for="modal-user-phone"
                 >Номер телефона</label
               >
             </div>

@@ -68,7 +68,6 @@ body {
   height: 2.75rem;
 }
 
-
 .logo-svg-phone {
   width: 1.5rem;
   height: 1.5rem;
@@ -768,7 +767,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .cta-form-footer {
   display: flex;
   margin-top: 1.875rem;
-  align-items: end;
+  align-items: center;
   gap: 1.875rem;
 }
 
@@ -1029,6 +1028,16 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .modal-form-button {
   display: block;
   width: 100%;
+}
+
+/* about section full */
+.about {
+  min-height: 270px;
+  position: relative;
+}
+.about-image {
+  position: absolute;
+  z-index: 0  ;
 }
 
 @media (max-width: 1740px) {

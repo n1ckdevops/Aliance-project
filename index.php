@@ -113,7 +113,7 @@
       </a>
       <ul class="header-nav">
         <li class="header-nav-item">
-          <a href="about.php" class="header-nav-link">О компании</a>
+          <a href="./about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
           <a href="" class="header-nav-link">Контрактное производство</a>

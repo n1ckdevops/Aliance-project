@@ -141,10 +141,11 @@
   </nav>
   <!-- /.navbar -->
   <section class="section about">
-    <img src="img/about.png" alt="" class="about-image">
-    <div class="container">
-      <div class="separator"></div>
-      <h2 class="section-title section-title-header">Схема работы</h2>
+    <img src='' alt="" class="about-image">
+    <div class="container container-about">
+      <div class="separator separator-in-pic"></div>
+      <h2 class="section-title section-title-header title-about">О компании</h2>
+      <a href="index.php" class="small-nav-main">Главная  &mdash;</a>&nbsp;<a href="about.php" class="small-nav-about">О компании</a>
     </div>
   </section>
 

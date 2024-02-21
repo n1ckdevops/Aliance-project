@@ -11,7 +11,7 @@
         </p>
         <div class="input-group-wrapper">
           <div class="input-group">
-            <input id="user-name" type="text"  class="input" placeholder=" " maxlength="30" />
+            <input id="user-name" type="text" name='username' class="input" placeholder=" " maxlength="30" />
             <label class="input-group-label" for="user-name">Имя</label>
           </div>
           <!-- /.input-group -->

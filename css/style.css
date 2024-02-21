@@ -763,7 +763,9 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   background: inherit;
   padding: 0 10px;
 }
-
+.input.is-invalid {
+  border: 1px solid #f44336;
+}
 .cta-form-footer {
   display: flex;
   margin-top: 1.875rem;

@@ -117,23 +117,38 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
 });
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+let currentModal; // текущий модальное окно
+let modalDialog; // текущее диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // собираем все кнопки модального окна
+modalButtons.forEach((button) => {
+  // клик по переключателю модального окна
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+    // определяем текущее модальное окно
+    currentModal = document.querySelector(button.dataset.target);
+    // открываем текущий модальное окно
+    currentModal.classList.toggle("is-open");
+    // назначаем диалоговое окно
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    // отслеживаем событие клика по кнопке модального окна
+    currentModal.addEventListener("click", (event) => {
+      // если клик по пустой области
+      if (!event.composedPath().includes(modalDialog)) {
+        // закрываем текущее модальное окно
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
 
+// ловим событие клика по кнопке модального окна
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  // проверяем что это клавиша ESC и текущее модальное окно открыто
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    // закрываем текущее модальное окно
+    currentModal.classList.toggle("is-open");
   }
 });
 
@@ -171,7 +186,18 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            // отслеживаем событие клика по кнопке модального окна
+            currentModal.addEventListener("click", (event) => {
+              // если клик по пустой области
+              if (!event.composedPath().includes(modalDialog)) {
+                // закрываем текущее модальное окно
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             alert(response.statusText);
           }

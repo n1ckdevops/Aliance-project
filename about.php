@@ -132,7 +132,7 @@
       </a>
     </div>
     <!-- /.header-phone -->
-    <button class="button header-button" data-toggle="modal">
+    <button class="button header-button" data-toggle="modal" data-target='#feedback-modal'>
       <svg class="button-phone" width="24" height="24">
         <use href="img/sprites.svg#phone"></use>
       </svg>

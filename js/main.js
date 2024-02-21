@@ -158,7 +158,7 @@ forms.forEach((form) => {
     .addField("[name=userphone]", [
       {
         rule: "required",
-        errorMessage: "Введите номер телефон!",
+        errorMessage: "Введите номер телефона!",
       },
     ])
     .onSuccess((event) => {

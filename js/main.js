@@ -160,5 +160,23 @@ forms.forEach((form) => {
         rule: "required",
         errorMessage: "Введите номер телефон!",
       },
-    ]);
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; // наша форма
+      const formData = new FormData(thisForm); // получаем данные из формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alert("Форма отправлена!");
+          } else {
+            alert(response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
+    });
 });

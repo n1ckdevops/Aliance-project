@@ -766,6 +766,16 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .input.is-invalid {
   border: 1px solid #f44336;
 }
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: inherit;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transform: translateY(-50%);
+}
 .cta-form-footer {
   display: flex;
   margin-top: 1.875rem;
@@ -1047,14 +1057,6 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .title-about {
   color: #000;
   margin-bottom: 20px;
-}
-
-.about-image {
-  /* width: 100%;
-  height: 270px;
-  filter: brightness(40%);
-  position: absolute;
-  z-index: -1; */
 }
 
 .small-nav-main {

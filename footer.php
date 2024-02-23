@@ -16,7 +16,8 @@
           </div>
           <!-- /.input-group -->
           <div class="input-group">
-            <input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder=" " maxlength="30" />
+            <input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder=" "
+              maxlength="30" />
             <label class="input-group-label" for="user-phone">Номер телефона</label>
           </div>
           <!-- /.input-group -->
@@ -224,7 +225,7 @@
       ответит на все интересующие вопросы и поможем даже в самых сложных
       случаях!
     </p>
-    
+
   </div>
 </div>
 <script src="js/swiper-bundle.min.js"></script>

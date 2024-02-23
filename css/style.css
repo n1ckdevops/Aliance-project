@@ -461,7 +461,12 @@ body {
 }
 .trademark-cards {
   display: flex;
+  
 }
+.trademark-cards.trademark-card-title {
+  text-decoration: none;
+}
+
 .trademark-card {
   height: 100%;
   flex-basis: 50%;
@@ -1587,6 +1592,9 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .cta-form-text {
     font-size: 14px;
   }
+  .section-cta {
+    margin-top: 0;
+  }
   /* footer section 992 */
   .footer-top {
     flex-direction: column;
@@ -1761,6 +1769,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .section-title-header {
     margin-bottom: 30px;
   }
+  
   /* footer section 576 */
   .hidden-576 {
     display: none;

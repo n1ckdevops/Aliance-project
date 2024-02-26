@@ -115,10 +115,10 @@
         <h2 class="footer-menu-title">Собственные марки</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
-            <a href="#" class="footer-menu-link">Автохимия AG-Tech</a>
+            <a href="./avtohim_agtech.php" class="footer-menu-link">Автохимия AG-Tech</a>
           </li>
           <li class="footer-menu-item">
-            <a href="#" class="footer-menu-link">Автохимия AP</a>
+            <a href="./avtohim.php" class="footer-menu-link">Автохимия AP</a>
           </li>
         </ul>
       </div>
@@ -126,7 +126,7 @@
       <div class="footer-menu-wrapper">
         <ul class="footer-menu-list footer-menu-list-3">
           <li class="footer-menu-item">
-            <a href="#" class="footer-menu-link footer-menu-link-bold">О компании</a>
+            <a href="./about.php" class="footer-menu-link footer-menu-link-bold">О компании</a>
           </li>
           <li class="footer-menu-item">
             <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
@@ -214,6 +214,7 @@
 </div>
 <div class="modal" id='alert-modal'>
   <div class="modal-dialog">
+    <img src="/img/thanks.png" alt="Спасибо" class="thanks-block">
     <h2 class="modal-title">Спасибо</h2>
     <a href="#" class="modal-close" data-toggle="modal" data-target='#alert-modal'>
       <svg class="modal-svg" width="24" height="24">

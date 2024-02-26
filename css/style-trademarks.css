@@ -1,0 +1,26 @@
+.trademark {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+@media (max-width: 1200px) {
+  .trademark {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .trademark {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .trademark {
+    margin-bottom: 4rem;
+  }
+  .trademark-card {
+    padding: 2rem;
+  }
+}

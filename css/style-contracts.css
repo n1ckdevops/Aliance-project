@@ -1,0 +1,42 @@
+.seo-block {
+  margin-top: 6.25rem;
+  margin-bottom: 10rem;
+  display: block;
+}
+
+
+.seo-block_title {
+  color: rgb(41, 45, 51);
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.seo-block_text {
+  color: rgb(130, 138, 153);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.button-link::before {
+  display: none;
+}
+.seo-block_load {
+  display: flex;
+  gap: .3125rem;
+}
+
+@media (max-width: 1200px) {
+  .seo-block {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .seo-block_text {
+    
+    font-size: 14px;
+    
+  }
+}

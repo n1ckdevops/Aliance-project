@@ -3,10 +3,13 @@
   /* border: 1px solid red; */
 }
 
+
 .mobile-menu {
   display: none;
 }
-
+.seo-block {
+  display: none;
+}
 .mobile-menu-toggle {
   display: none;
 }
@@ -457,7 +460,7 @@ body {
   z-index: 0;
 }
 .section.trademark {
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 .trademark-cards {
   display: flex;
@@ -542,13 +545,15 @@ body {
   object-fit: cover;
 }
 
+
+
 .founder-text {
   color: rgb(130, 138, 153);
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0%;
-  margin-bottom: 3.4375rem;
+  margin-bottom: 1.875rem;
 }
 
 .section-title-clients {
@@ -598,8 +603,8 @@ body {
 }
 
 .clients {
-  margin-top: 9.625rem;
-  margin-bottom: 11.4rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .section-title-trademark {
@@ -1078,6 +1083,19 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   line-height: 160%;
 }
 
+
+.trademark-top {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+}
+.thanks-block {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+
 @media (max-width: 1740px) {
   html {
     font-size: 14px;
@@ -1148,7 +1166,6 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   .header-button {
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 1rem;
   }
 
   .header-phone {
@@ -1811,7 +1828,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   /* modal section 576 */
   .modal-dialog {
     margin: auto;
-    max-width: 93%;
+    max-width: 85%;
     padding: 30px;
     position: relative;
   }
@@ -1822,6 +1839,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   }
   .modal-text {
     font-size: 14px;
+    margin-bottom: 0;
   }
   .modal-close {
     top: 35px;
@@ -1829,6 +1847,15 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
     width: 40px;
     height: 40px;
   }
+  .thanks-block {
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    margin-bottom: 1.475rem;
+}
 }
 
 .close-menu .mobile-menu-line:nth-child(2) {

@@ -1,0 +1,12 @@
+.header-bg {
+  background-image: url(../img/avto-agtech.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.first_block_bg {
+  background-image: url('../img/autohim-bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+
+}

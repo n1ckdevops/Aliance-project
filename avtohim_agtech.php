@@ -1,6 +1,9 @@
 <?php 
 $page_title = 'Автохимия AG-tech';
+$header_style = 'header-bg'?>;
 ?>
+
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -11,6 +14,8 @@ $page_title = 'Автохимия AG-tech';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/avtohim-style.css" />
+
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <title><?= $page_title ?> - Aliance Production</title>
@@ -143,7 +148,7 @@ $page_title = 'Автохимия AG-tech';
     </button>
   </nav>
   <!-- /.navbar -->
-  <header class="section about <?= $header_style ?>">
+  <header class="section about header-bg">
     <img src='' alt="" class="about-image">
     <div class="container container-about">
       <div class="separator separator-in-pic"></div>

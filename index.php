@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -164,15 +166,15 @@
     </div>
     <!-- /.container -->
   </header>
-  <?php include_once('./template-parts/workflow.php')?>
-
+  
   
   <!-- /.section production -->
-
+  <?php include_once('./template-parts/workflow.php')?>
+  <?php include_once('./template-parts/production-section.php')?>
   <?php $block_title = 'собственные торговые марки'; include_once('./template-parts/trademarks-block.php')?>
 
   <?php include_once('./template-parts/founder-section.php')?>
-  <?php include_once('./template-parts/production-section.php')?>
+  <?php $index_section_clients = 'Производим аэрозольную продукцию для разных сфер'; include_once('./template-parts/clients-section.php')?>
   <section class="section blog">
     <div class="container">
       <div class="separator"></div>

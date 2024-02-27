@@ -1,7 +1,7 @@
 <? 
 $page_title = 'О компании';
 $small_descr = 'hidden';
-// $slider_text = 'header-features-text';
+$about_clients_hiddden = 'hidden';
 include_once("header-page.php") ?>
 
 <section class="section about_blank">
@@ -96,5 +96,5 @@ include_once("header-page.php") ?>
 
 <?php include_once('./template-parts/founder-section.php')?>
 <?php include_once('./template-parts/blog-section.php')?>
-<?php include_once('./template-parts/clients-section.php')?>
+<?php $index_section_clients = 'Производим аэрозольную продукцию для разных сфер'; include_once('./template-parts/clients-section.php')?>
 <? include_once("footer.php") ?>

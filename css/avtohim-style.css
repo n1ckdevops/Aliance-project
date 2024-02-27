@@ -1,12 +1,50 @@
+.section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 .header-bg {
   background-image: url(../img/avto-agtech.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
-.first_block_bg {
-  background-image: url('../img/autohim-bg.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: cover;
+.first-block-bg {
+  width: 100%;
+  height: 100%;
+}
+.about_blank-wrapper {
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+  gap: 12rem;
+}
 
+.second-block-img {
+  position: absolute;
+  width: 52.5rem;
+  height: 41.25rem;
+  top: 5px;
+  right: 0;
+  object-fit: cover;
+}
+.clients {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.clients-content {
+  flex-basis: 50%;
+  margin-left: 0;
+  margin-top: 2.6875rem;
+}
+.avtohim-list {
+  columns: 4 auto;
+  padding: 0;
+}
+.section-text {
+  max-width: 52.5rem;
+  margin: 0;
+  margin-bottom: 3.125rem;
+}
+.avtohim-section-title {
+  margin-bottom: 1.25rem;
 }

@@ -1,5 +1,4 @@
 .about {
-  margin-top: 5.7rem;
   padding-top: 75px;
   padding-bottom: 50px;
 }
@@ -14,7 +13,7 @@
 }
 .first-block-bg {
   width: 40rem;
-  height: 100%; 
+  height: 100%;
 }
 .about_blank-wrapper {
   display: flex;
@@ -59,9 +58,38 @@
 .section-cta {
   margin-top: 8rem;
 }
-/* .avtohim-list-item {
-  font-size: 1rem;
-} */
+.distr {
+  position: relative;
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem;
+  background: rgb(240, 242, 245);
+}
+.distr-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.distr-content {
+  flex-basis: 50%;
+}
+.distr-title {
+  margin-bottom: 0;
+}
+.distr-text {
+  margin-bottom: 1.25rem;
+}
+.distr-button {
+  margin-top: 1.875rem;
+  padding: 25px 60px;
+}
+
+.distr-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50rem;
+}
+
 @media (max-width: 1200px) {
   .section-cta {
     margin-top: 3rem;
@@ -69,7 +97,6 @@
   .second-block-img {
     position: absolute;
     width: 40%;
-    height: 100%;
     top: 5px;
     right: 0;
     object-fit: cover;
@@ -87,8 +114,14 @@
   }
   .first-block-bg {
     width: 35rem;
-    height: 100%; 
+    height: 100%;
   }
+  /* .distr-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45rem;
+  } */
 }
 @media (max-width: 992px) {
   .section {
@@ -101,6 +134,7 @@
   .second-block-img {
     position: relative;
     width: 100%;
+    height: 80%;
     top: 5px;
     right: 0;
     object-fit: cover;
@@ -118,18 +152,31 @@
   }
   .first-block-bg {
     width: 100%;
-    height: 100%; 
+    height: 100%;
   }
   .about_blank-text {
     margin-bottom: 0;
   }
   .about_blank-content {
     max-width: unset;
-    margin-top: 0;  
+    margin-top: 0;
   }
   .avtohim-list {
     columns: 2 auto;
     padding: 0;
+  }
+  .distr-content {
+    flex-basis: 100%;
+  }
+  .distr-img {
+    position: relative;
+    width: 40rem;
+    display: block;
+    margin: auto;
+  }
+  .distr {
+    padding-bottom: 0;
+    padding-top: 3rem;
   }
 }
 
@@ -137,5 +184,24 @@
   .avtohim-list {
     columns: 1 auto;
     padding: 0;
+  }
+  .distr-img {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .distrib-list {
+    columns: 2 auto;
+    padding: 0;
+  }
+  .distr-button {
+    width: 100%;
+  }
 }
+
+@media (max-width: 375px) {
+  .distrib-list {
+    columns: 1 auto;
+  }
 }

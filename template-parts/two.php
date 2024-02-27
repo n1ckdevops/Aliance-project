@@ -80,7 +80,7 @@
         <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
         <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
         <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
-        <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
+        <a href="#" class="client-logo-item hidden-576"><img src="img/client.png" alt="" class="clients-img" /></a>
       </div>
       <!-- /.clients-logo -->
     </div>

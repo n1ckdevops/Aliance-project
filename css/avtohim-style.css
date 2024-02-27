@@ -1,3 +1,8 @@
+.about {
+  margin-top: 5.7rem;
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
 .section {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -54,6 +59,9 @@
 .section-cta {
   margin-top: 8rem;
 }
+/* .avtohim-list-item {
+  font-size: 1rem;
+} */
 @media (max-width: 1200px) {
   .section-cta {
     margin-top: 3rem;
@@ -83,12 +91,16 @@
   }
 }
 @media (max-width: 992px) {
+  .section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
   .section-cta {
     margin-top: 3rem;
   }
   .second-block-img {
-    position: absolute;
-    width: 40%;
+    position: relative;
+    width: 100%;
     height: 80%;
     top: 5px;
     right: 0;
@@ -116,4 +128,15 @@
     max-width: unset;
     margin-top: 0;  
   }
+  .avtohim-list {
+    columns: 2 auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .avtohim-list {
+    columns: 1 auto;
+    padding: 0;
+}
 }

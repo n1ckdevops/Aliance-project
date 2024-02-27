@@ -1,14 +1,11 @@
 <section class="section clients">
   <div class="container">
-    <div class="separator" <?= $avtohim_clients_hidden ?>></div>
     <div class="clients-wrapper block-reverse">
-      <div class="clients-content">
-        <div class="<?=$seporator?>"></div>
+      <div class="clients-content clients-content-flex">
+        <div class="separator"></div>
         <h2 class="section-title section-title-clients">
-          <?= $second_block_title?> 
-          <?= $index_section_clients?>
+        Производим аэрозольную продукцию для разных сфер
         </h2>
-        <p class="about_blank-text"><?= $second_block_text?></p>
         <ul class="clients-list">
           <li class="clients-list-item">
             <svg width="30" height="30" class="clients-list-icon">
@@ -58,12 +55,12 @@
             </svg>
             Косметика по уходу за обувью
           </li>
-          <li class="clients-list-item" <?= $avtohim_clients_hidden ?>>
+          <li class="clients-list-item">
             <svg width="30" height="30" class="clients-list-icon">
               <use href="img/sprites.svg#build-materials"></use>
             </svg>
             Строительные материалы
-          <li class="clients-list-item" <?= $avtohim_clients_hidden ?>>
+          <li class="clients-list-item">
             <svg width="30" height="30" class="clients-list-icon">
               <use href="img/sprites.svg#more"></use>
             </svg>
@@ -74,7 +71,7 @@
       <!-- clients-content -->
 
 
-      <div class="clients-logo-list" <?= $avtohim_clients_hidden ?> >
+      <div class="clients-logo-list">
         <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
         <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
         <a href="#" class="client-logo-item"><img src="img/client.png" alt="" class="clients-img" /></a>
@@ -88,5 +85,4 @@
       <!-- /.clients-logo -->
     </div>
   </div>
-  <img src="<?= $second_block_img?>" alt="" class='second-block-img' <?= $about_clients_hidden ?>>
 </section>

@@ -1,7 +1,7 @@
 <? 
 $page_title = 'О компании';
 $small_descr = 'hidden';
-$about_clients_hiddden = 'hidden';
+$about_clients_hidden = 'hidden';
 include_once("header-page.php") ?>
 
 <section class="section about_blank">

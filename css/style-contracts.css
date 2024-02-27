@@ -4,7 +4,6 @@
   display: block;
 }
 
-
 .seo-block_title {
   color: rgb(41, 45, 51);
   font-family: Noto Sans;
@@ -24,7 +23,11 @@
 }
 .seo-block_load {
   display: flex;
-  gap: .3125rem;
+  gap: 0.3125rem;
+}
+
+.section-cta {
+  margin-top: 14rem;
 }
 
 @media (max-width: 1200px) {
@@ -35,8 +38,10 @@
 
 @media (max-width: 768px) {
   .seo-block_text {
-    
     font-size: 14px;
-    
+  }
+  .section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }

@@ -4,8 +4,6 @@
   padding-bottom: 50px;
 }
 
-
-
 .about_blank {
   min-height: 41.25rem;
   position: relative;
@@ -22,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .about_blank-title {
   position: relative;
   max-width: 37.5rem;

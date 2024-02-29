@@ -1,0 +1,15 @@
+.section.blog.blog-main {
+  margin-top: 6.25rem;
+}
+.container.blog-section-style {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}
+.blog-card.blog-main-block {
+  width: 48%;
+}
+
+.blog-card-text-main {
+  color: #fff;
+}

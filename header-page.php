@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/style-trademarks.css" />
   <link rel="stylesheet" href="css/avtohim-style.css" />
   <link rel="stylesheet" href="css/avtohim-agtech-style.css" />
-  
+  <link rel="stylesheet" href="css/blog-style.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <title><?= $page_title ?> - Aliance Production</title>
@@ -148,7 +148,7 @@
     </button>
   </nav>
   <!-- /.navbar -->
-  <header class="section about" >
+  <header class="section about <?= $blog_style_header ?>" >
     <!-- <img src='' alt="" class="about-image"> -->
     <div class="container container-about">
       <div class="separator separator-in-pic"></div>

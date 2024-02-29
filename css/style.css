@@ -1095,7 +1095,6 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   margin-bottom: 30px;
 }
 
-
 @media (max-width: 1740px) {
   html {
     font-size: 14px;

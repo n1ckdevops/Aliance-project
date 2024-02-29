@@ -1,13 +1,9 @@
-<section class="section blog blog-main">
-  <div class="container blog-section-style">
+<section class="section blog blog-main " >
+  <div class="container blog-section-style" id="content-1">
     <div class="separator" <?=$blog_hidden?>></div>
     <h2 class="section-title blog-title" <?=$blog_hidden?>>
       Блог экспертов в области производства
     </h2>
-    <!-- <div class="swiper blog-slider"> -->
-
-    <!-- <div class="swiper-wrapper"> -->
-
     <a href="#" class=" blog-card blog-main-block">
       <img src="img/blog/blog11.jpeg" alt="" class="blog-card-image" />
       <h3 class="blog-card-title">
@@ -118,7 +114,35 @@
         предоставлены...
       </p>
     </a>
-    <!-- </div> -->
 
   </div>
+  <div class="container">
+    <div class="pagination">
+      <button class="page active">1</button>
+      <button class="page">2</button>
+      <button class="page">3</button>
+      <button class="page">4</button>
+      <button class="page">5</button>
+    </div>
+  </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const pages = document.querySelectorAll('.page');
+  const content = document.querySelector('.blog-section-style');
+
+  pages.forEach(page => {
+    page.addEventListener('click', function() {
+      // Получаем номер страницы из текста кнопки
+      const pageNumber = parseInt(this.textContent);
+      // Устанавливаем соответствующий контент для выбранной страницы
+
+      // Убираем активное состояние у всех страниц
+      pages.forEach(p => p.classList.remove('active'));
+      // Добавляем активное состояние выбранной странице
+      this.classList.add('active');
+    });
+  });
+});
+</script>

@@ -1,6 +1,9 @@
 .section.blog.blog-main {
   margin-top: 6.25rem;
 }
+.pad-top {
+  padding-top: 30px;
+}
 .container.blog-section-style {
   display: flex;
   flex-wrap: wrap;
@@ -12,4 +15,27 @@
 
 .blog-card-text-main {
   color: #fff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3.125rem;
+  margin-right: 1.6rem;
+
+}
+.page {
+  border: none;
+  padding: 0.75rem 1.25rem;
+  color: rgb(41, 45, 51);
+  font-family: Noto Sans;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  cursor: pointer;
+}
+.page.active {
+  color: #5c8ee6; 
+  border: 1px solid #2196f3;
 }

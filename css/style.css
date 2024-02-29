@@ -1093,6 +1093,7 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 .pad-top {
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 6rem;
 }
 
 @media (max-width: 1740px) {

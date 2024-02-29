@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Блог';
 $blog_hidden = 'hidden';
-$blog_header_title = 'pad-top'
+$blog_header_title = 'pad-top';
 ?>
 
 

@@ -1,4 +1,4 @@
-<section class="section blog blog-main " >
+<section class="section blog blog-main" >
   <div class="container blog-section-style" id="content-1">
     <div class="separator" <?=$blog_hidden?>></div>
     <h2 class="section-title blog-title" <?=$blog_hidden?>>

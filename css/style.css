@@ -2,7 +2,9 @@
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
-
+.hidden-full {
+  display: none;
+}
 .mobile-menu {
   display: none;
 }
@@ -660,6 +662,7 @@ body {
 }
 
 .blog-card-text {
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
@@ -1094,6 +1097,14 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 6rem;
+}
+
+.blog-slider-footer.blog-more-slider {
+  justify-content: end;
+}
+
+.style-footer-full {
+  margin-top: 20rem;
 }
 
 @media (max-width: 1740px) {

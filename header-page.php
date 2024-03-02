@@ -148,7 +148,7 @@
     </button>
   </nav>
   <!-- /.navbar -->
-  <header class="section about <?= $blog_header_title ?>" >
+  <header class="section about <?= $blog_header_title ?> <?= $hidden_header?>" >
     <!-- <img src='' alt="" class="about-image"> -->
     <div class="container container-about">
       <div class="separator separator-in-pic"></div>

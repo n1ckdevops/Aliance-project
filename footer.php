@@ -1,4 +1,4 @@
-<section class="cta">
+<section class="cta <?= $hidden_footer?>" >
   <div class="bg-gray section-cta">
     <img src="img/cta.png" alt="call to action" class="cta-image hidden-992" />
     <div class="cta-form-wrapper container">
@@ -48,7 +48,7 @@
 <!-- /.cta -->
 
 <!-- FOOTER SECTION -->
-<footer class="footer">
+<footer class="footer <?= $style_footer?>" >
   <div class="container">
     <div class="footer-top">
       <svg class="footer-logo">

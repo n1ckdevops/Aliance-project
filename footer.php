@@ -132,7 +132,7 @@
             <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
           </li>
           <li class="footer-menu-item">
-            <a href="#" class="footer-menu-link footer-menu-link-bold">Контакты</a>
+            <a href="contact.php" class="footer-menu-link footer-menu-link-bold">Контакты</a>
           </li>
         </ul>
       </div>
@@ -149,7 +149,7 @@
           &copy;
           <? echo date("d.m.Y") ?> «Aliance Production». Все права защищены.
         </p>
-        <a href="#" class="policy">Политики конфиденциальности</a>
+        <a href="politics.php" class="policy">Политики конфиденциальности</a>
       </div>
       <!-- /.footer-legal -->
       <div class="footer-author">

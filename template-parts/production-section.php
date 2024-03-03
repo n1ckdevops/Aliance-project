@@ -6,7 +6,7 @@
     </h2>
     <div class="cards">
       <div class="card">
-        <div href='../avtohim.php' class="card-content">
+        <div class="card-content">
           <h3 class="card-title">Автомобильная химия</h3>
           <p class="card-text">
             Безусловно, сплочённость команды профессионалов позволяет
@@ -17,7 +17,7 @@
         <img src="img/avto-him.png" alt="Автомобильная химия" class="card-img" />
       </div>
       <div class="card">
-        <div href='../avtohim_agtech.php' class="card-content">
+        <div class="card-content">
           <h3 class="card-title">Бытовая химия</h3>
           <p class="card-text">
             А также стремящиеся вытеснить традиционное производство,

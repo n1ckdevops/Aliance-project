@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Aliance Production</title>
 </head>
 
@@ -164,8 +166,8 @@
     </div>
     <!-- /.container -->
   </header>
-  
-  
+
+
   <!-- /.section production -->
   <?php include_once('./template-parts/workflow.php')?>
   <?php include_once('./template-parts/production-section.php')?>

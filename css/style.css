@@ -200,7 +200,7 @@ body {
 .main-button {
   padding: 1.625rem 2.625rem 1.4375rem 2.5625rem;
   font-weight: 400;
-  width: 19.5625rem;
+  min-width: 19.5625rem;
   letter-spacing: 0.0187rem;
   line-height: 160%;
 }
@@ -1105,6 +1105,13 @@ input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
 
 .style-footer-full {
   margin-top: 20rem;
+}
+p.politics_text {
+  color: rgb(41, 45, 51);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 9.375rem;
 }
 
 @media (max-width: 1740px) {
